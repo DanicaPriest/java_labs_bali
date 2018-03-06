@@ -9,6 +9,16 @@ package part_01;
  */
 
 public class Exercise_05 {
+    public static void main(String[] args) {
+        double a = 10.5 * 4.2;
+        double b = 3.4 * 2;
+        double c = a - b;
+        double d = 86.9 - 12.1;
+        System.out.println(c/d);
+
+    }
+
+
 
 
 }
