@@ -1,5 +1,7 @@
 package part_03;
 
+
+
 /**
   Write 3 classes. These classes can reside in the same file for ease and clarity.
   The first class (the controller) should have at least two methods, one of which being a main method.
@@ -12,6 +14,42 @@ package part_03;
   sports teams, trees, beers, people and so on.
 
  **/
-//public class Colors{
+public class Exercise_01{
 
-//}
+
+    public static void main(String[] args) {
+
+        HalloweenCandy CandyCorn = new HalloweenCandy("Candy Corn", false, 1);
+        HardCandy BlowPops = new HardCandy("Blow Pops", "Cherry", true);
+
+        System.out.println("You have " + HardCandy.name + " " + HalloweenCandy.name + " in your bag");
+
+
+    }
+
+}
+
+public class HalloweenCandy {
+
+    private String name;
+    private boolean hasNuts;
+    private int rating;
+
+    public HalloweenCandy(String name, boolean hasNuts, int rating) {
+        this.name = name;
+        this.hasNuts = hasNuts;
+        this.rating = rating;
+    }
+}
+
+public class HardCandy{
+    private String name;
+    private String bestflavor;
+    private boolean isFruity;
+
+    public HardCandy(String name, String bestflavor, boolean isFruity) {
+        this.name = name;
+        this.bestflavor = bestflavor;
+        this.isFruity = isFruity;
+    }
+}

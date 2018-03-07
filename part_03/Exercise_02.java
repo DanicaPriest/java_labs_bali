@@ -9,3 +9,13 @@ package part_03;
 
  */
 
+public class Exercise_02{
+    public static void main(String[] args) {
+
+    }
+    public int randomNum(){
+        int rn = (int) Math.random();
+        return rn;
+    }
+
+}
