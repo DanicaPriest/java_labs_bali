@@ -18,7 +18,14 @@ import java.util.Scanner;
 
 public class Exercise_12 {
     public static void main(String[] args) {
-
+        System.out.println("Enter miles:");
+        Scanner scanner = new Scanner(System.in);
+        double miles = scanner.nextDouble();
+        System.out.println("Enter MPG:");
+        double mpg = scanner.nextDouble();
+        System.out.println("Enter price:");
+        double price = scanner.nextDouble();
+        System.out.println(miles * (mpg * price));
     }
 
 }

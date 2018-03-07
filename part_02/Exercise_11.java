@@ -23,7 +23,7 @@ public class Exercise_11 {
         Scanner scanner = new Scanner(System.in);
         int invest = scanner.nextInt();
         System.out.println("Enter interest rate:");
-        double rate = scanner.nextInt();
+        int rate = scanner.nextInt();
         System.out.println("Enter years:");
         int years = scanner.nextInt();
 
