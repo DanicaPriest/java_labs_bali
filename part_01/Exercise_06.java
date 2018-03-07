@@ -10,5 +10,15 @@ package part_01;
  */
 
 public class Exercise_06 {
+    public static void main(String[] args) {
+        int answer = 1;
+        for (int i = 17; i > 0; i-= 2){
+            int j = i;
+            i -= 2;
+            answer += i + j;
+
+        }
+        System.out.println(answer);
+    }
 
 }

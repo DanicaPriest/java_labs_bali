@@ -9,5 +9,8 @@ package part_01;
  *
  */
 public class Exercise_08 {
+    public static void main(String[] args) {
+
+    }
 
 }

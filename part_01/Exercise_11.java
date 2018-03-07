@@ -14,5 +14,14 @@ package part_01;
  */
 
 public class Exercise_11 {
+    public static void main(String[] args) {
+        int population = 380123456;
+        int sec = 3 * 31536000; // 3 years times seconds in a year
+        int born = sec/6;
+        int died = sec/12;
+        int imm = sec/40;
+        int answer = population + born + imm;
+        System.out.println(answer - died);
+    }
 
 }
