@@ -10,13 +10,15 @@ package part_02;
 public class Exercise_09 {
     public static void main(String[] args) {
         char letter = 'z';
+        int i = 0;
 
        do {
            System.out.println(letter);
            letter--;
+           i++;
 
         }
-        while ();
+        while (i < 26);
     }
 }
 
