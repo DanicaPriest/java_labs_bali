@@ -18,9 +18,9 @@ public class Exercise_07 {
         Scanner scanner = new Scanner(System.in);
         int minutes = scanner.nextInt();
         int years = minutes/525600;
-        int daysleft = minutes % 525600;
-        int days = daysleft/1440;
-        
+        int minutesleft = minutes % 525600;
+        int days = minutesleft/1440;
+
 
         System.out.println(minutes + " minutes is " + years + " years and " + days + " days");
 

@@ -9,16 +9,15 @@ package part_02;
  */
 public class Exercise_10 {
     public static void main(String[] args) {
-        boolean isPrime = true;
+
         for (int i = 2; i <= 100; i++){
-            isPrime = true;
-            for (int x = 1; x <  i; x++){
+            boolean isPrime = true;
+            for (int x = 2; x <  i; x++){
                 if ( i % x == 0){
-                    isPrime = true;
-                    break;
+                    isPrime = false;
                 }
             }
-            if (!isPrime){
+            if (isPrime){
                 System.out.println(i + " is Prime");
             }
         }

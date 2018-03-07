@@ -19,6 +19,15 @@ import java.util.Scanner;
 
 public class Exercise_11 {
     public static void main(String[] args) {
+        System.out.println("Enter investment amount:");
+        Scanner scanner = new Scanner(System.in);
+        int invest = scanner.nextInt();
+        System.out.println("Enter interest rate:");
+        double rate = scanner.nextInt();
+        System.out.println("Enter years:");
+        int years = scanner.nextInt();
+
+        System.out.println(years * (invest + (invest * (rate/100))));
 
     }
 
