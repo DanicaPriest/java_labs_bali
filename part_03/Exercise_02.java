@@ -11,11 +11,18 @@ package part_03;
 
 public class Exercise_02{
     public static void main(String[] args) {
+        int a = randomNum();
+        double b = randomDouble();
+        System.out.println(a * b);
 
     }
-    public int randomNum(){
-        int rn = (int) Math.random();
+    public static int randomNum(){
+        int rn = (int) (Math.random() * 100);
         return rn;
+    }
+    public static double randomDouble(){
+        int rd = Math.random();
+        return rd;
     }
 
 }
