@@ -21,7 +21,7 @@ public class Exercise_02{
         return rn;
     }
     public static double randomDouble(){
-        int rd = Math.random();
+        double rd = Math.random();
         return rd;
     }
 
