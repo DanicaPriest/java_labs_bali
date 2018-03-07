@@ -11,6 +11,12 @@ import java.util.Scanner;
  *
  */
 public class Exercise_08 {
+    public static void main(String[] args) {
+        System.out.println("Enter number:");
+        Scanner scanner = new Scanner(System.in);
+        int val = scanner.nextInt();
+
+    }
 
 }
 
