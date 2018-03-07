@@ -1,6 +1,6 @@
 package part_03;
 
-//import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
+import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 
 import java.util.Scanner;
 
