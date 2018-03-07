@@ -9,11 +9,14 @@ package part_01;
  */
 public class Exercise_09 {
     public static void main(String[] args) {
+
+
         double w = 2.4;
         double h = 6.4;
         double area = w * h;
         double perimeter = 2 * (w + h);
         System.out.println("The area is: " + area + " The perimeter is: " + perimeter);
+
 
     }
 
