@@ -67,7 +67,7 @@ public class Exercise_04 {
         }
 
         // if it is not a tie, use a switch statement and a turnery operator to determine the winner
-switch (player, computer){
+switch (){
             
 
 }
