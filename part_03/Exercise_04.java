@@ -25,7 +25,7 @@ public class Exercise_04 {
         //call the getHand method for the computerHand
         getHand(computerHand);
         //create an String variable "winner" by calling the determineWinner() method with parameters computerHand and playerHand
-        String winner = determineWinner();
+        String winner = determineWinner(computerHand, playerHand);
         //print out the player hand and computer hand
         System.out.println("player hand: " + playerHand);
         System.out.println("computer hand: " + computerHand);
@@ -42,13 +42,13 @@ public class Exercise_04 {
         switch (hand) {
             case 0:
                 return "scissor";
-            break;
+
             case 1:
                 return "rock";
-            break;
+
             case 2:
                 return "paper";
-            break;
+
 
             default:
                 //this is a temporary return statement to squash error - you'll need to update
@@ -63,15 +63,24 @@ public class Exercise_04 {
 
         // determine if the game is a tie
         if (player == computer){
-            System.out.println("You've tied! You and the computer are one");
+            status ="You've tied! You and the computer are one";
         }
+else {
+            // if it is not a tie, use a switch statement and a turnery operator to determine the winner
+            switch (player) {
+                case 0:
+                    status = computer == 1 ? "You Lost:(" : "You Won!";
+                    break;
+                case 1:
+                    status = computer == 2 ? "You Lost:(" : "You Won!";
+                    break;
+                case 2:
+                    status = computer == 0 ? "You Lost:(" : "You Won!";
+                default:
+                    System.out.println("There was an error");
 
-        // if it is not a tie, use a switch statement and a turnery operator to determine the winner
-switch (){
-            
-
-}
-
+            }
+        }
         return status;
 
     }
