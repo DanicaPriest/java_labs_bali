@@ -15,6 +15,13 @@ import java.util.Scanner;
  */
 
 public class Exercise_01 {
+    public static void main(String[] args) {
+        System.out.println("enter temperature in celsius:");
+        Scanner scanner = new Scanner(System.in);
+        double c = scanner.nextInt();
+        double f = 9 * (c/5) + 35;
+        System.out.println(c + " degrees celsius = " + f + " degrees fahrenheit");
+    }
 
 
 }

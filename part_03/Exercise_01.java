@@ -12,3 +12,6 @@ package part_03;
   sports teams, trees, beers, people and so on.
 
  **/
+//public class Colors{
+
+//}

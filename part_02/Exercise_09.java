@@ -8,7 +8,12 @@ package part_02;
  *
  */
 public class Exercise_09 {
+    public static void main(String[] args) {
+        char letter = 'z';
+       // do {
 
+        //}
+    }
 }
 
 
