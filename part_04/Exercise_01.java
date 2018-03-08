@@ -23,8 +23,11 @@ class Excercise_01 {
 for (int i = 0; i < numbers.length; i++){
     numbers[i] = scanner.nextInt();
 }
-for (int j = 0; j < numbers.length; j++){
+for (int j = 1; j < numbers.length; j+= 2){
     System.out.print(numbers[j] + ", ");
+}
+for (int k = 8; k >= 0; k-= 2){
+    System.out.print(numbers[k] + ", ");
 }
     }
 }
