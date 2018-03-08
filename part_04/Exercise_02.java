@@ -14,7 +14,7 @@ class Exercise_02{
         for(int i = 1; i <= 2017; i++){
             arr[i - 1] = i;
         }
-       
+
         for (int j = arr.length; j >= 0; j-= 2){
             System.out.print(j + ", ");
         }
