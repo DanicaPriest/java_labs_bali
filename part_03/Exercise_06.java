@@ -21,23 +21,29 @@ class Exercise_06 {
         long totalSeconds = totalMilliseconds/1000;
 
         // Get the current second within the minute within the hour
-        long currentSeconds = totalSeconds - (totalSeconds + (timeZoneChange * 60 * 60));
+        long currentSeconds = totalSeconds % 60;
 
         // Get total minutes
         long totalMin = totalSeconds/60;
 
         // Get the current minute in the hour
-        long currentMin = totalMin + (timeZoneChange * 60);
+        long currentMin = totalMin % 60;
 
         // Get the total hours
-        long totalHours = totalMin/60;
+        long totalHours = (totalMin/60) + timeZoneChange;
 
         // Get the current hour
-        long currentHour = totalHours + timeZoneChange;
+        long currentHour = totalHours % 24;
+        String ampm = " AM";
 
         // Display results using a 12 hour clock, include AM or PM
-        System.out.println("The time is:" + currentHour + ":" + currentMin + ":" + currentSeconds);
-        System.out.println(totalHours);
+        if (currentHour > 12){
+            currentHour -= 12;
+            ampm = " PM";
+        }
+
+        System.out.println("The time is:" + currentHour  + ":" + currentMin + ":" + currentSeconds + ampm);
+
 
     }
 }
