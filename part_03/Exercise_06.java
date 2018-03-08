@@ -18,18 +18,26 @@ class Exercise_06 {
         long totalMilliseconds = System.currentTimeMillis();
 
         // Get total seconds since midnight, 1/1/1970
+        long totalSeconds = totalMilliseconds/1000;
 
         // Get the current second within the minute within the hour
+        long currentSeconds = totalSeconds - (totalSeconds + (timeZoneChange * 60 * 60));
 
         // Get total minutes
+        long totalMin = totalSeconds/60;
 
         // Get the current minute in the hour
+        long currentMin = totalMin + (timeZoneChange * 60);
 
         // Get the total hours
+        long totalHours = totalMin/60;
 
         // Get the current hour
+        long currentHour = totalHours + timeZoneChange;
 
         // Display results using a 12 hour clock, include AM or PM
+        System.out.println("The time is:" + currentHour + ":" + currentMin + ":" + currentSeconds);
+        System.out.println(totalHours);
 
     }
 }
