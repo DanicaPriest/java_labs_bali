@@ -7,3 +7,15 @@ package part_05;
  * out "Hello Recursion!" 10 times.
  *
  */
+class Exercise_05{
+    public static void main(String[] args) {
+      printMe(7);
+    }
+    static void printMe(int times){
+        for (int i = 0; i < times; i++){
+            System.out.println("Hello Recursion!");
+
+        }
+        return;
+    }
+}
