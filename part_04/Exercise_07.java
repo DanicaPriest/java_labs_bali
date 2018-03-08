@@ -1,7 +1,7 @@
 package part_04;
 
 
-//import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 
 import java.util.Scanner;
 
@@ -50,9 +50,9 @@ class Exercise_07 {
         for (int j = 0; j < sSize; j++) {
             bananas = pancakes.pop();
             System.out.print(bananas);
-            {
 
-            }
+
+
         }
     }
 

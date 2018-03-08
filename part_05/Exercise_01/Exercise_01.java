@@ -1,6 +1,4 @@
-package part_05;
-
-import java.util.ArrayList;
+package part_05.Exercise_01;
 
 /**
  * Write three classes. The Class_01 should contain the main method. The main method should create an instance
@@ -10,3 +8,32 @@ import java.util.ArrayList;
  * private instance variables. Use System.out.println at various points to demonstrate the flow of execution and
  * the varying state of each private variable. You may name these classes whatever you like.
  */
+
+
+class Colors {
+    private String name;
+    private boolean isPrimary;
+    private int brightness; // colors shade from 1 to 10 10 being the darkest;
+
+
+
+
+    public static void main(String[] args) {
+    Blues indigo = new Blues();
+    indigo.setName("indigo");
+
+
+
+
+
+
+
+    }
+
+
+}
+
+
+
+
+
