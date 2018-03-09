@@ -24,7 +24,10 @@ int sample = array.length - 2;
 
 10) How does a bubble sort work? it compares 2 ints and them moves large ones to one end and small ones to the other
 
-11) When might you use an irregular array? What is a good example of an irregular array?
+11) When might you use an irregular array? What is a good example of an irregular array?when you have data that doesn't fit into a table format.
+{2,5,7}
+{3,9}
+{4,9,4}
 
 12) Demonstrate how to iterate through an array, printing each value, using a for loop. for (int i = 0; i < array.length; i++){
 System.out.println(i)}
@@ -55,3 +58,4 @@ for (int j = 0; j <array[i].length; j++){}
 23) What does "Strings are immutable" mean? you can't change them like with int, you can just replace them.
 
 24) Using the CLI, how do you invoke a Java application and provide two parameters to the main method?
+java -cp classes myjavacode.MyClass arg1 arg2
