@@ -9,27 +9,33 @@ package part_05;
  */
 class Races {
 
-    int someVal = 20;
+    int raceLength10km = 10;
+
 
     public static void main(String[] args) {
-        Races obj = new Races();
-        obj.test();
+        Races tenkm = new Races();
+        tenkm.test();
     }
 
     public void test(){
-        InnerClass inner = new InnerClass();
-        inner.innerMethod();
+        Tenkm london1000 = new Tenkm();
+        london1000.innerMethod();
     }
 
-    public int outerMethod(){
+    public int returnTen(){
 
         return 10;
     }
+    public int returnFive(){
 
-    class InnerClass{
+        return 5;
+    }
+
+    class Tenkm{
         public void innerMethod(){
-            int x = someVal;
-            int y = outerMethod();
+            int x = raceLength10km;
+            int y = returnTen();
+            int z = returnFive();
         }
     }
 }
