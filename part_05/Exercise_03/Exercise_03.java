@@ -14,28 +14,22 @@ package part_05.Exercise_03;
 class Fruit{
     public static void main(String[] args) {
         Bananas bananica = new Bananas();
-        printBanana("Bananas!");
-        int pB = Fruit.bananaNum(5);
+        bananica.printBanana("Bananas!", "yellow");
+
+        int pB = bananica.bananaNum(5);
         System.out.println(pB);
-        pB = Bananas.bananaNum(9);
+
+        pB = bananica.bananaNum(9, 5);
         System.out.println(pB);
-        Bananas.printBanana("Bananas!");
-        String[] bS = bananaSplit();
+
+        bananica.printBanana("Bananas!");
+        String[] bS = bananica.bananaSplit("BANANA", "banana");
         System.out.println(bS[0]);
-        bS = Bananas.bananaSplit();
+
+        bS = bananica.bananaSplit("Banana");
         System.out.println(bS[0]);
 
     }
-    static String printBanana(String word){
-        System.out.println(word);
-        return word;
-    }
-    static int bananaNum(int num){
-        return num;
-    }
-    static String[] bananaSplit(){
-        String bananaString = "BANANA";
 
-        return bananaString.split(" ");
-    }
+
 }

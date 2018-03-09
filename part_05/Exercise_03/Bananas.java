@@ -11,15 +11,33 @@ public class Bananas {
         return size;
 
     }
+
+    static int bananaNum(int num, int size){
+        return num;
+    }
+
     static String printBanana(String word){
-        System.out.println(word);
         System.out.println(word);
         return word;
     }
-    static String[] bananaSplit(){
-        String bananaString = "banana";
 
-        return bananaString.split(" ");
+    static String printBanana(String word, String color){
+        System.out.println(word);
+        System.out.println(color);
+        return word;
+    }
+
+    static String[] bananaSplit(String word, String stuff){
+
+
+        return word.split(stuff);
+    }
+
+
+    static String[] bananaSplit(String word){
+
+
+        return word.split(" ");
     }
 
     public int getSize() {

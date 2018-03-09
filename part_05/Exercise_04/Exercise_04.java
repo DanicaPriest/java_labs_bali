@@ -13,11 +13,6 @@ package part_05.Exercise_04;
  *
  */
 class MST3K{
-    private int Maincharacter;
-    private int movies;
-    private String bestLine;
-    private String host;
-    private boolean isHorror;
 
     public static void main(String[] args) {
         MST3K_Movies pod_people = new MST3K_Movies(true, 80);
