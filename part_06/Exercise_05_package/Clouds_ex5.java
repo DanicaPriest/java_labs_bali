@@ -25,7 +25,7 @@ public class Clouds_ex5 {
     public int area(int h, int w) {
         h = height;
         w = width;
-        System.out.println("The area is " + h * w);
+        System.out.println(h * w);
         return h * w;
     }
 

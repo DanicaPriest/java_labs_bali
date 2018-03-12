@@ -24,6 +24,12 @@ public class Cirrus_ex5 extends Clouds_ex5{
         super.setWidth(width);
     }
 
+    @Override
+    public int area(int h, int w) {
+        System.out.println("The area is: ");
+        return super.area(h, w);
+    }
+
     public static void main(String[] args) {
         Cirrus_ex5 cirrus = new Cirrus_ex5(5, 6);
         cirrus.area(cirrus.getHeight(), cirrus.getWidth());

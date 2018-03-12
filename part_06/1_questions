@@ -14,14 +14,20 @@ it collects data from the class thats being inherited
 
 
 6) What does it mean when a method is overridden?
+the method is changed from its original code and the new method runs instead.
 
 7) How do overridden methods support polymorphism?
+it makes methods useable from various classes
 
 8) What is the difference between an overloaded method and an overridden method?
+overload has to do with the parameters. Override is the content of the method.
 
 9) What is dynamic method dispatch?
+Dynamic method dispatch is a mechanism by which a call to an overridden method is resolved at runtime
 
 10) What does the "final" keyword do?
+ final indicates that the method cannot be overridden by a subclasses
 
 11) Are classes in Java are a subclass of what super class?
+java.lang
 
