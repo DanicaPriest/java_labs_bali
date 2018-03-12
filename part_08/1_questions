@@ -1,26 +1,82 @@
 1) Describe the exception hierarchy.
 
+Throwable:
+Exception: RuntimeException
+Error
+
+
 2) What is a try/catch statement?
+a statement that tests for an error in the code and catches it if the error is there.
 
 3) Why do we use try/catch statements?
+to allow code to run even if errors occur.
 
 4) Write a full example of a try/catch/finally statement that catches two distinct exceptions
+public static void main(String[] args) {
+
+        System.out.println("First number");
+        try {
+            Scanner scanner1 = new Scanner(System.in);
+
+            int a = scanner1.nextInt();
+            System.out.println("Second number");
+            Scanner scanner2 = new Scanner(System.in);
+            int b = scanner2.nextInt();
+            System.out.println(a / b);
+        }
+        catch (ArithmeticException exc){
+            System.out.println("You can't divide by zero");
+        }
+       catch (InputMismatchException exc){
+           System.out.println("That's not a number");
+       }
+       finally{
+       System.out.println("this is a finally statement");
+       }
+}
 
 5) What does it mean to "throw" an exception? How does it work?
+you can cause the code to stop and show an exception under specified conditions. You give a condition then if the condition is true an exception is thrown.
 
 6) What happens if your application encounters an exception and you don't catch it or throw it?
+the code will stop running.
 
 7) When catching exception in an inheritance hierarchy, should you catch the subclass exception or the
 superclass exception first? Why?
 
 8) Write a nested try/catch statement.
+public static void main(String[] args) {
+        String words = "This is a String";
+        try{
+            try{
+                String test = words.substring(50,10);
+            }catch(StringIndexOutOfBoundsException exc){
+                System.out.println("first exception");
+            }
+            String test2 = words.substring(-1);
+        }catch(StringIndexOutOfBoundsException exc){
+            System.out.println("second exception");
+        }
+
+}
 
 9) What does it mean to rethrow an exception?
+The purpose of the rethrow operation is to get the attention of the outside world that an exception has occurred and at the same time perform any contingency logic in the catch block.
 
 10) What are the 7 methods that come with the Throwable class?
+Throwable fillInStackTrace()
+String getLocalizedMessage()
+String getMessage()
+void printStackTrace()
+void printStackTrace(PrintStream stream)
+void printStackTrace(PrintWriter stream)
+String toString()
 
 11) What does the "finally" block do?
+it executes whether or not there is an exception caught.
 
 12) When is the finally block executed? Will it ever not be executed?
+at the end of the code after the code runs or the exception is caught. no.
 
 13) What are the three recently added features to Java exceptions?
+automatic resource management, multi-catch, final rethrow
