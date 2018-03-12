@@ -11,11 +11,14 @@ class Exercise_05{
     public static void main(String[] args) {
       printMe(7);
     }
-    static void printMe(int times){
-        for (int i = 0; i < times; i++){
-            System.out.println("Hello Recursion!");
+    //call itself 10 times and print out
+    static int printMe(int times){
 
+        if (times > 1) {
+
+            printMe(times - 1 );
         }
-        return;
+        System.out.println("Hello Recursion! " + times);
+        return 0;
     }
 }
