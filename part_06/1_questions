@@ -1,12 +1,17 @@
 1) What is Java inheritance?
+it's a foundation priciple of Java and means classes can inherit traits from a hierarchial classification.
 
 2) How does inheritance work?
+it allows one class to incorparate another class into its declaration
 
 3) What are some advantages that inheritance provides?
+you dont have to declare things multiple times
 
 4) What does the "super" keyword do?
+it collects data from the class thats being inherited
 
 5) In what order are constructors called when there are multiple subclasses?
+
 
 6) What does it mean when a method is overridden?
 
