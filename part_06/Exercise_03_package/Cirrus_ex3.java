@@ -26,9 +26,7 @@ public class Cirrus_ex3 extends Clouds_ex3 {
         this.shape = shape;
     }
 
-    public Cirrus_ex3(int height, int width, String name, String description) {
-        super(height, width, name, description);
-    }
+
 
     public int area() {
         super.setWidth(5);
