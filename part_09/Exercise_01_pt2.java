@@ -3,7 +3,7 @@ package part_09;
 import java.io.*;
 
 public class Exercise_01_pt2 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)  {
 
         String oldfile = "/home/danica/Documents/CodingNomads/sample.txt";
         String newfile = "/home/danica/Documents/CodingNomads/newsample.txt";
