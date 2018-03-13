@@ -45,7 +45,7 @@ class Exercise_07 {
         char bananas;
 
         for (i = 0; i < sSize; i++) {
-            pancakes.push((char) i);
+            pancakes.push((char) (i + 25));
         }
         for (int j = 0; j < sSize; j++) {
             bananas = pancakes.pop();

@@ -14,11 +14,8 @@ public class Exercise_05 {
 
     public static void main(String[] strings) {
 
-        int[] nums = new int[5];
-        for (int i = 0; i <nums.length ; i++) {
-            nums[i] = i;
-
-        }
+        int[] nums = {4, 6, 9, 7, 99};
+        int counter = 10;
         for (int i = 0; i < nums.length; i++){
             System.out.print(nums[i] + ", ");
         }
