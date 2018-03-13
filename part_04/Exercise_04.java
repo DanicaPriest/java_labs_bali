@@ -19,7 +19,7 @@ class Exercise_04 {
 
     // write a method called getMaxVal that takes in a 2D array and iterates through the array to determine the max value in array
     public static int getMaxVal(int[][] arr) {
-        int maxNum = 0;
+        int maxNum = arr[0][0];
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 if (arr[i][j] >= maxNum) {

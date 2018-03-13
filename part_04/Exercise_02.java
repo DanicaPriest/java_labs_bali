@@ -11,12 +11,12 @@ class Exercise_02{
 
     public static void main(String[] args) {
         int[] arr = new int[2017];
-        for(int i = 1; i <= 2017; i++){
-            arr[i - 1] = i;
+        for(int i = 0; i < 2017; i++){
+            arr[i] = i + 1;
         }
 
-        for (int j = arr.length; j >= 0; j-= 2){
-            System.out.print(j + ", ");
+        for (int j = arr.length - 1; j >= 0; j-= 2){
+            System.out.print(arr[j] + ", ");
         }
     }
 }
