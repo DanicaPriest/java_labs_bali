@@ -1,30 +1,33 @@
 
 1) What is the difference between the Thread and Runnable?
-
+by extending Thread, each of your threads has a unique object associated with it,
+whereas implementing Runnable, many threads can share the same object instance.
 
 2) How do you start a thread using Runnable?
-
+implements Runnable
 
 3) How do you start a thread using Thread?
-
+extends Thread
 
 4) How do you get a thread's name?
+Thread.currentThread()
 
 
 5) What does the "synchronize()" method do?
+it locks the object do no other threads can enter until its finished
 
-
-6) What doe the "join()" method do?
+6) What does the "join()" method do?
+allows one thread to wait until another thread completes its execution.
 
 
 7) What does the "sleep()" method do?
-
+pauses the code for a set amount of time
 
 8) What is the one method you must write if you're implementing the Runnable class?
-
+run()
 
 9) Should you create that same method if you're extending Thread?
-
+yes
 
 10) Why is multi-threading so cool?
-
+it allows you to run programs during idle time of other programs and at the same time.

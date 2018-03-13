@@ -20,7 +20,7 @@ try (FileReader rs = new FileReader(oldfile);
 an integer for each byte
 
 7) What is the documentation above of the FileInputStream class header say? (hint: inside /** ... */)
-     
+
             java.io.*
 
 8) Is a DataOutputStream used for bytes or characters?
