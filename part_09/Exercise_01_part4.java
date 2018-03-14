@@ -1,43 +1,20 @@
 package part_09;
 
-public class Exercise_01_part4 {
+import part_10.Queue;
 
+public class Exercise_01_part4 implements Runnable{
+    Thread thread;
 
-    static class Queue implements Runnable{
-        private int q[];
-        private int putloc, getloc;
-
-        Queue(int size) {
-            q = new int[size];
-            putloc = getloc = 0;
-        }
-        @Override
-        public void run() {
-
-
-        }
-        void put(int num) {
-            if (putloc == q.length) {
-                return;
-            }
-            q[putloc++] = num;
-        }
-
-        int get() {
-            if (getloc == putloc) {
-                return 0;
-            }
-            return q[getloc++];
-        }
-
-
+    public Exercise_01_part4(String name) {
+        thread = new Thread(this, name);
+        thread.start();
     }
 
-
-    public static void main(String[] args) {
-        Queue firstQ = new Queue(101);
+    @Override
+    public void run() {
         int q;
         int i;
+        Queue firstQ = new Queue(101);
         for (i = 0; i < 101; i++) {
             firstQ.put(i);
         }
@@ -47,7 +24,13 @@ public class Exercise_01_part4 {
                 System.out.println(q);
             }
 
-        }
+    }
+
+
+
+
+
+
     }
 
 }
