@@ -9,10 +9,13 @@ public class Exercise_2_pt1 implements Runnable{
     }
 
     @Override
-    public void run() {
-        System.out.println(thread.getName() + " starting.");
-
-        System.out.println(thread.getName() + " terminating.");
+    synchronized public void run() {
+        System.out.println(thread.getName() + " started");
+        for (int i = 0; i < 10; i++) {
+            System.out.println("~*~Unicorn Badger~*~ " + i);
+        }
+        System.out.println(" ");
+        System.out.println(thread.getName() + " is finishing");
 
 
     }
