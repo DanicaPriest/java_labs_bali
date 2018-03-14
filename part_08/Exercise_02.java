@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exercise_02 {
 
-        static class Stack extends Exception{
+        static class Stack{
             private char s[];
             private int putloc;
 
@@ -13,9 +13,12 @@ public class Exercise_02 {
                 putloc = s.length -1;
 
             }
-            void push(char ch){
+
+
+            void push(char ch) {
                 if (putloc == 0){
-                    //throw Stackfull
+                    return;
+
                 }
                 s[putloc--] = ch;
 
@@ -28,7 +31,7 @@ public class Exercise_02 {
             }
         }
 
-        public static void main(String[] args) {
+        public static void main(String[] args) throws StackFull {
             System.out.println("Specify size of stack:");
             Scanner scanner = new Scanner(System.in);
             int sSize = scanner.nextInt();
@@ -44,6 +47,15 @@ public class Exercise_02 {
                 System.out.print(bananas);
 
 
+
+            }
+        }
+        public class StackFull extends Exception{
+
+            @Override
+            public String toString() {
+
+                    return "NameTooLong{ Name is too long}";
 
             }
         }
