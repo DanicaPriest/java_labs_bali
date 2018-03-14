@@ -15,31 +15,37 @@ public class Exercise_02 {
             }
 
 
-            void push(char ch) {
+            void push(char ch) throws StackFull{
                 if (putloc == 0){
                     return;
 
                 }
+                else if (putloc > s.length){
+                    throw new StackFull();
+                }
                 s[putloc--] = ch;
 
             }
-            char pop(){
+            char pop() throws StackEmpty{
                 if (putloc == s.length){
                     return (char) 0;
                 }
+                else if (putloc < 0){
+                    throw new StackEmpty();
+                }
+
                 return s[putloc++];
             }
         }
 
-        public static void main(String[] args) throws StackFull {
+        public static void main(String[] args) throws StackEmpty, StackFull {
             System.out.println("Specify size of stack:");
             Scanner scanner = new Scanner(System.in);
             int sSize = scanner.nextInt();
             Stack pancakes = new Stack(sSize);
-            int i;
             char bananas;
 
-            for (i = 0; i < sSize; i++) {
+            for (int i = 0; i < sSize; i++) {
                 pancakes.push((char)(i + 25));
             }
             for (int j = 0; j < sSize; j++) {
@@ -50,15 +56,24 @@ public class Exercise_02 {
 
             }
         }
-        public class StackFull extends Exception{
+        public static class StackFull extends Exception{
 
             @Override
             public String toString() {
 
-                    return "NameTooLong{ Name is too long}";
+                    return "StackFull{ Stack is full}";
 
             }
         }
+    public static class StackEmpty extends Exception{
+
+        @Override
+        public String toString() {
+
+            return "StackEmpty{ Stack is Empty}";
+
+        }
+    }
 
     }
 
