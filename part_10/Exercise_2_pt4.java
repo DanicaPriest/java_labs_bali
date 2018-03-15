@@ -10,7 +10,7 @@ public class Exercise_2_pt4 implements Runnable {
     @Override
     public void run() {
         System.out.println(thread.getName() + " started");
-        for (int i = 0; i < 6000; i++) {
+        for (int i = 0; i < 10000; i++) {
             System.out.println("~*~Unicorn Badger~*~ " + i);
         }
 

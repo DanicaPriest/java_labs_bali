@@ -1,7 +1,5 @@
 package part_09;
 
-import part_10.Queue;
-
 public class Exercise_01_part4 implements Runnable{
     Thread thread;
 
