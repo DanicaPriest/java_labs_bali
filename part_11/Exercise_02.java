@@ -15,10 +15,10 @@ public class Exercise_02 {
     public static void main(String[] args) {
         Integer numArr[] = {1, 2, 4, 5};
         String sArr[] = {"Unicorn", "Rainbow"};
-        System.out.println(Arrays.toString(numArr));
-        System.out.println(Arrays.toString(sArr));
+
         exchangeStuff(numArr, 0, 2);
         exchangeStuff(sArr, 0, 1);
+
         System.out.println(Arrays.toString(numArr));
         System.out.println(Arrays.toString(sArr));
     }

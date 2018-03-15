@@ -8,6 +8,14 @@ package part_11;
 
 
 public class Exercise_04 {
+    public static <E extends Number> void sumArray(E[] array){
+        double sum = 0;
+
+        for (int i = 1; i <array.length ; i++) {
+            sum += array[i].doubleValue();
+
+        }
+    }
 
 }
 
