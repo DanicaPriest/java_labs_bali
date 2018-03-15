@@ -9,7 +9,7 @@ public class Exercise_01_pt3 implements Runnable {
     }
 
     @Override
-    public void run() {
+    synchronized public void run() {
 
         System.out.println(thread.getName());
 
