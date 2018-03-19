@@ -1,10 +1,11 @@
 1) Turn the following into a Generic interface:
 
-   public interface Consumer {
-       public void consume(String parameter)
+   public <E> interface Consumer {
+       public void consume(E parameter)
    }
 
 2) What are a few advantages of using Generic types?
+you can pass in any data type.
 
 3) What is Type Erasure?
 
@@ -17,11 +18,18 @@
     Does this work?
     Integer i = returnType(1);
     String s = returnType("String");
+    yes
 
-5) What is a Bounded Type Parameter?
+5) What is a Bounded Type Parameter? when you only want to accept one type of data for example numbers only;
 
-6) Demonstrate the use of Generic Wildcard in a method signature:
+6) Demonstrate the use of Generic Wildcard in a method signature:public static <T> T writeAll(Collection<T> coll, Sink<T> snk)
+public static <T> T writeAll(Collection<T> coll, Sink<T> snk)
 
 7) What are bounded and unbounded wildcards in Generics?
+ The unbounded wildcard type is specified using the wildcard character (?), for example, List<?>. This is called a list of unknown type. There are two scenarios where an unbounded wildcard is a useful approach:
+
+    If you are writing a method that can be implemented using functionality provided in the Object class.
+    When the code is using methods in the generic class that don't depend on the type parameter. For example, List.size or List.clear. In fact, Class<?> is so often used because most of the methods in Class<T> do not depend on T.
+You can use an upper bounded wildcard to relax the restrictions on a variable. For example, say you want to write a method that works on List<Integer>, List<Double>, and List<Number>; you can achieve this by using an upper bounded wildcard.
 
 8) What is difference between List<? extends T>  and  List <? super T> ?

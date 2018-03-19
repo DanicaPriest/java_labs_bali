@@ -1,10 +1,10 @@
 Answer the following:
 
 1) What are the access control modifiers (acm) provided in Java?
-public private protected
+public private protected default
 
 2) Briefly explain each acm and how they differentiate from each other?
-public is anyone can access, private can only be accessed by members of its class, protected is only when inheritience is invovled
+public is anyone can access, private can only be accessed by members of its class, protected is only when inheritience is involved (classes, subclasses), default is available to the same package.
 
 3) Why do we use acm's?
 to limit access to code
@@ -16,11 +16,11 @@ anyone can access passwords and confidential stuff
 public void carMeth(Car object){}
 
 6) Write a method signature that returns an object of type "Car".
-Car object Meth(){}
+Car getCar();
 
 7) What is a very important consideration to keep in mind when passing objects (hint: by reference) from one
 method to another?
-
+the methods do not get their own copies
 
 8) What is method overloading?
 when one method can take different numbers and/or types of parameters
@@ -71,7 +71,7 @@ the best general-purpose sorting algorithm. It uses a value to compare then divi
 a class within a class
 
 24) What is the scope of a nested class?
-it can access the parent class
+it can access the outer classes
 
 25) What is a variable-arity method?
 when you can use an undetermined amount of parameters
@@ -83,4 +83,4 @@ you don't have to have a set number of parameters so if a user only have name an
 varags
 
 28) Why important considerations must you keep in mind when using variable-arity methods? (hint: ambiguity)
-overloading can make the code throw errors because it is ambiguious.
+overloading can make the code throw errors because it is ambiguious. varags must be last argument in the list.
