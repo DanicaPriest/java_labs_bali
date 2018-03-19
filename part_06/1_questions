@@ -11,7 +11,7 @@ you dont have to declare things multiple times
 it collects data from the class thats being inherited
 
 5) In what order are constructors called when there are multiple subclasses?
-
+top to bottom;
 
 6) What does it mean when a method is overridden?
 the method is changed from its original code and the new method runs instead.
@@ -29,5 +29,5 @@ Dynamic method dispatch is a mechanism by which a call to an overridden method i
  final indicates that the method cannot be overridden by a subclasses
 
 11) Are classes in Java are a subclass of what super class?
-java.lang
+object
 

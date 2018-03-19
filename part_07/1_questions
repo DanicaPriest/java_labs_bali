@@ -1,5 +1,5 @@
 1) What is a Java package?
-a collection of classes
+a collection of like files.
 
 2) What is the CLASSPATH variable all about?
  is a parameter in the Java Virtual Machine or the Java compiler that specifies the location of user-defined classes and packages
@@ -8,6 +8,7 @@ a collection of classes
 a folder
 
 4 How do packages affect access to Java classes?
+public private protected
 they prevent naming conflicts are make it easier to access grouped classes
 
 5) What is an interface?
@@ -26,4 +27,7 @@ it prevents making a bunch of different methods with different names that all do
 Lambda expressions let you express instances of single-method interfaces (referred to as functional interfaces) more compactly.
 
 10) How many interfaces can a single class implement?
-one
+unlimited
+
+11) what is a default interface method?
+adding a new method to the interface but give it a default behavior so it doesn't break the code.
