@@ -8,6 +8,8 @@
 you can pass in any data type.
 
 3) What is Type Erasure?
+Type erasure ensures that no new classes are created for parameterized types; consequently, generics incur no runtime overhead.
+Generic type gets replaced by passed parameter
 
 4) Assuming the following snippet:
 
@@ -22,8 +24,9 @@ you can pass in any data type.
 
 5) What is a Bounded Type Parameter? when you only want to accept one type of data for example numbers only;
 
-6) Demonstrate the use of Generic Wildcard in a method signature:public static <T> T writeAll(Collection<T> coll, Sink<T> snk)
+6) Demonstrate the use of Generic Wildcard in a method signature:
 public static <T> T writeAll(Collection<T> coll, Sink<T> snk)
+
 
 7) What are bounded and unbounded wildcards in Generics?
  The unbounded wildcard type is specified using the wildcard character (?), for example, List<?>. This is called a list of unknown type. There are two scenarios where an unbounded wildcard is a useful approach:
@@ -33,6 +36,7 @@ public static <T> T writeAll(Collection<T> coll, Sink<T> snk)
 You can use an upper bounded wildcard to relax the restrictions on a variable. For example, say you want to write a method that works on List<Integer>, List<Double>, and List<Number>; you can achieve this by using an upper bounded wildcard.
 
 8) What is difference between List<? extends T>  and  List <? super T> ?
+subclass vs super class
 "Producer Extends" - If you need a List to produce T values (you want to read Ts from the list), you need to declare it with ? extends T, e.g. List<? extends Integer>. But you cannot add to this list.
 
 "Consumer Super" - If you need a List to consume T values (you want to write Ts into the list), you need to declare it with ? super T, e.g. List<? super Integer>. But there are no guarantees what type of object you may read from this list.

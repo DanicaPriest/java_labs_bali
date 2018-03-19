@@ -12,8 +12,8 @@ Reader, Writer FileReader
 the file automatically closes when the try is exited so there is no need for a .close() at the end of the code.
 
 5) Demonstrate a try-wth-resources block:
-try (FileReader rs = new FileReader(oldfile);
-        FileWriter ws = new FileWriter(newfile)
+try (FileReader r = new FileReader(oldfile);
+        FileWriter w = new FileWriter(newfile)
         )
 
 6) What does the read() method on the FileInputStream class return?
@@ -27,17 +27,17 @@ an integer for each byte
 bytes
 
 9) What is a BufferedReader?
-provide for the efficient reading of characters, arrays, and lines
+character stream that provides for the efficient reading of characters, arrays, and lines
 
 10) Why does a BufferedReader require an InputStreamReader as an argument?
 it need Input stream to convert the bytes into characters.
 
 11) What does the InputStreamReader do with it's byte stream argument?
-converts it into characters and passes it to the BufferedReader
+converts it into characters and passes it to the BufferedReader or reader.
 
 12) What is the difference between the read() and readLine() on BufferedReader?
 readLine reads the whole line of a string where read reads each character.
 
 13) Demonstrate instantiating a BufferedReader that will read a file called "yucatan_cenotes.txt"
 
-BufferedReader buff = new BufferedReader(new FileReader("yucatan_cenotes.txt"))
+BufferedReader buff = new BufferedReader(new FileReader(new FileInputStream("yucatan_cenotes.txt")))

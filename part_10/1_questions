@@ -4,16 +4,24 @@ by extending Thread, each of your threads has a unique object associated with it
 whereas implementing Runnable, many threads can share the same object instance.
 
 2) How do you start a thread using Runnable?
-implements Runnable
+calling start()
 
 3) How do you start a thread using Thread?
 extends Thread
 
 4) How do you get a thread's name?
-Thread.currentThread()
+runnable:
+public ClassName(String name){
+super(this, name);
+thrd.start()
+}
 
+thrd.getName()
 
-5) What does the "synchronize()" method do?
+Thread:
+getName();
+
+5) What does "synchronize()" do?
 it locks the object do no other threads can enter until its finished
 
 6) What does the "join()" method do?

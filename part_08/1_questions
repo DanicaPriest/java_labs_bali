@@ -43,7 +43,7 @@ the code will stop running.
 
 7) When catching exception in an inheritance hierarchy, should you catch the subclass exception or the
 superclass exception first? Why?
-subclass first. 
+subclass first.
 
 8) Write a nested try/catch statement.
 public static void main(String[] args) {
