@@ -13,7 +13,7 @@ public abstract class LamdasAndLambdonts implements Lambduh, Lambdont {
     Lambduh test = (lamb) ->
          "This lamb's name is " + lamb;
 
-   
+
 
 
 }
