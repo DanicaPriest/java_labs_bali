@@ -1,16 +1,19 @@
-public class LamdasAndLambdonts implements Lambduh, Lambdont {
+public abstract class LamdasAndLambdonts implements Lambduh, Lambdont {
 
-    @Override
-    public String check(boolean isLamb) {
+
+    Lambdont check = (isLamb) -> {
         if (isLamb){
             return "This is a lamb duh!";
         }
 
         return "This is not a lamb duh!";
-    }
+    };
 
-    @Override
-    public String test(String lamb) {
-        return "This name is " + lamb;
-    }
+
+    Lambduh test = (lamb) ->
+         "This lamb's name is " + lamb;
+
+   
+
+
 }
